@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.links .link {
+  margin-top: 20px;
+}
+
+.work {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.work.work1 {
+  background-color: gray;
+  position: relative;
+}
+
+.work1--inside-scroller {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+
+.work.work2 {
+  background-color: red;
+}
+
+.work.work3 {
+  background-color: blue;
+}
+
+.work.work4 {
+  background-color: yellow;
+}
+
+.work.work5 {
+  background-color: purple;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
+}
+
+.demo-page-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.demo-page-contain__hint {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
+      margin-right: 5px;
+  }
+}
