@@ -1,9 +1,5 @@
 import React from 'react';
-import Work1 from './Work1';
-import Work2 from './Work2';
-import Work3 from './Work3';
-import Work4 from './Work4';
-import Work5 from './Work5';
+import Work from './Work';
 import { Pager } from "react-bootstrap";
 import ReactPageScroller from '../ReactPageScroller';
 
@@ -21,7 +17,6 @@ export default class Frame extends React.Component {
 
   getPagesNumbers = () => {
     const pageNumbers = [];
-
     for (let i = 1; i <= 5; i++) {
       pageNumbers.push(
         <Pager.Item key={i} eventKey={i - 1} onSelect={this.handlePageChange}>
@@ -29,7 +24,6 @@ export default class Frame extends React.Component {
         </Pager.Item>,
       );
     }
-
     return [...pageNumbers];
   };
 
@@ -39,20 +33,19 @@ export default class Frame extends React.Component {
     return (
       <div className="demo-page-contain">
         <h3 className="demo-page-contain__hint">
-          You need to focus or hover page scroller to make scroll, keys or touch
-          work
+          list of stuff
         </h3>
         <ReactPageScroller
           pageOnChange={this.handlePageChange}
-          containerWidth={window.innerWidth * 0.4}
-          containerHeight={window.innerHeight * 0.5}
+          containerWidth={window.innerWidth * 0.7}
+          containerHeight={window.innerHeight * 0.8}
           customPageNumber={this.state.currentPage}
         >
-          <Work1 />
-          <Work2 />
-          <Work3 />
-          <Work4 />
-          <Work5 />
+          <Work num={1} />
+          <Work num={2} />
+          <Work num={3} />
+          <Work num={4} />
+          <Work num={5} />
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
           {pagesNumbers}
