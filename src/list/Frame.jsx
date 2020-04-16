@@ -1,14 +1,17 @@
 import React from 'react';
 import Work from './Work';
-import { Pager } from "react-bootstrap";
+import { Pager } from 'react-bootstrap';
 import ReactPageScroller from '../ReactPageScroller';
 
+import data from '../data/work.json';
 import './Frame.css';
 
 export default class Frame extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentPage: null };
+    this.state = {
+      currentPage: null
+    };
   }
 
   handlePageChange = number => {
