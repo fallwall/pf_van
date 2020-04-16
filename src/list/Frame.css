@@ -24,6 +24,7 @@ html, body {
   height: 100%;
   width: 100%;
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .work.work1 {
@@ -82,6 +83,28 @@ h2 {
 .demo-page-contain__hint {
   margin-bottom: 20px;
 }
+
+.work-img {
+  height: 30%;
+  /* width: 50%; */
+}
+
+.work-content {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work-left {
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.work-right {
+  display: flex;
+  flex-direction: column;
+} 
 
 @media (max-width: 768px) {
   .pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
