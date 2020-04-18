@@ -8,10 +8,11 @@
   },
   {
     "id": 2,
-    "title": "second maybe",
+    "title": "Home",
+    "format": "illustration",
     "img": "https://i.imgur.com/bUhD2iD.png",
     "url": "http://google.com",
-    "des": "this is some description"
+    "des": "Addresses that I've called home."
   },
   {
     "id": 3,

@@ -34,26 +34,28 @@ export default class Frame extends React.Component {
     const pagesNumbers = this.getPagesNumbers();
 
     return (
-      <div className="demo-page-contain">
-        <h3 className="demo-page-contain__hint">
-          list of stuff
+      <div className="Frame">
+        <div className="demo-page-contain">
+          <h3 className="demo-page-contain__hint">
+            list of stuff
         </h3>
-        <ReactPageScroller
-          pageOnChange={this.handlePageChange}
-          containerWidth={window.innerWidth * 0.7}
-          containerHeight={window.innerHeight * 0.8}
-          customPageNumber={this.state.currentPage}
-        >
-          <Work num={1} data={data[0]}/>
-          <Work num={2} data={data[1]}/>
-          <Work num={3} data={data[2]}/>
-          <Work num={4} data={data[3]}/>
-          <Work num={5} data={data[4]}/>
-  
-        </ReactPageScroller>
-        <Pager className="pagination-additional-class" bsSize="large">
-          {pagesNumbers}
-        </Pager>
+          <ReactPageScroller
+            pageOnChange={this.handlePageChange}
+            containerWidth={window.innerWidth * 0.7}
+            containerHeight={window.innerHeight * 0.8}
+            customPageNumber={this.state.currentPage}
+          >
+            <Work num={1} data={data[0]} />
+            <Work num={2} data={data[1]} />
+            <Work num={3} data={data[2]} />
+            <Work num={4} data={data[3]} />
+            <Work num={5} data={data[4]} />
+
+          </ReactPageScroller>
+          <Pager className="pagination-additional-class" bsSize="large">
+            {pagesNumbers}
+          </Pager>
+        </div>
       </div>
     );
   }
