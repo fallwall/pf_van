@@ -11,7 +11,7 @@ const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`
 const Parallax=()=> {
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
   return (
-    <div className="Paralalx">
+    <div className="Parallax">
     <div className="para-container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
       <animated.div class="card1" style={{ transform: props.xy.interpolate(trans1) }} />
       <animated.div class="card2" style={{ transform: props.xy.interpolate(trans2) }} />
