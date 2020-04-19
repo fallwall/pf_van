@@ -1,5 +1,5 @@
 .Frame {
-  /* margin: 0; */
+  margin: 0;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -22,7 +22,7 @@
 
 .work {
   height: 100%;
-  width: 100%;
+  width: 150%;
   display: flex;
   /* justify-content: space-between; */
 }

@@ -1,13 +1,14 @@
 import React from 'react';
-import Parallax from './main/Parallax';
-import Frame from './list/Frame';
+import { Route, Link } from "react-router-dom";
+import Home from './pages/Home';
+import Port from './pages/Port';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Parallax />
-      <Frame />
+      <Route path="/" exact render={() => <Home />} />
+      <Route path="/port" render={() => <Port />} />
     </div>
   );
 }
