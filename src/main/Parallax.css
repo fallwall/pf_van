@@ -63,7 +63,9 @@ body {
 .card4 {
   width: 25ch;
   height: 25ch;
-  background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg);
+  /* background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg); */
+  background-image: url(/letter.svg);
+  background-size: contain;
 }
 
 .para-container {
